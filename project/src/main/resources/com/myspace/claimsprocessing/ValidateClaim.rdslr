@@ -1,0 +1,16 @@
+package com.myspace.claimsprocessing;
+
+import java.lang.Number;
+
+rule "ValidateClaim"
+	dialect "mvel"
+	ruleflow-group "claimValidation"
+	when
+		>$subscriber : SubscriberInfo( )
+		>$claim : Claim( claimAmount <= $subscriber.availableBenifit && procedureDate >= $subscriber.enrollDate && subscriberSSN matches $subscriber.SSN )
+	then
+		>modify( $claim ) {
+				>setValidFlag( true ), 
+				>setValidityReason( "Date and Amount Validated" )
+		>}
+end

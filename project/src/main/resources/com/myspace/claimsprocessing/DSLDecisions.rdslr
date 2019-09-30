@@ -1,0 +1,16 @@
+package com.myspace.claimsprocessing;
+
+import java.lang.Number;
+
+rule "DSLDecisions"
+	dialect "mvel"
+	ruleflow-group "sampleDSLRule"
+	when
+		There is a Claim
+		- claim amount less than 120
+		There is a Subscriber
+		- claim belongs to subscriber
+		- Subscriber Balance more than claim Amount
+	then
+		Approve Claim
+end

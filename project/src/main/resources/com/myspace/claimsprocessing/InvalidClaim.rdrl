@@ -1,0 +1,16 @@
+package com.myspace.claimsprocessing;
+
+import java.lang.Number;
+
+rule "InvalidClaim"
+	dialect "mvel"
+	ruleflow-group "claimValidation"
+	when
+		claim : Claim( )
+		subscriber : SubscriberInfo( enrollDate after claim.procedureDate || availableBenifit < claim.claimAmount )
+	then
+		modify( claim ) {
+				setValidFlag( false ), 
+				setValidityReason( "\"Invalid Date or Claim Amount\"" )
+		}
+end
