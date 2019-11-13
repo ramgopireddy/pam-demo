@@ -1,0 +1,15 @@
+package com.myspace.medicalclaimstest;
+
+import java.lang.Number;
+
+rule "custHaveEmail"
+	dialect "mvel"
+	ruleflow-group "custEmail"
+	when
+		coverageHolder( chEmail != null )
+		event : medicalEvent( )
+	then
+		modify( event ) {
+				setCustEmail( true )
+		}
+end
