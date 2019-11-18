@@ -150,23 +150,6 @@
           <parameters/>
           <binding></binding>
         </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>100</width>
-          <header>Claim Prob</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>clmProb</factField>
-          <fieldType>String</fieldType>
-          <operator>==</operator>
-          <valueList>High, Medium, Low</valueList>
-          <parameters/>
-          <binding></binding>
-        </condition-column52>
       </conditions>
       <window>
         <parameters/>
@@ -270,11 +253,6 @@
       </value>
       <value>
         <valueString>chcov.getCoverageProduct()</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>High</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>

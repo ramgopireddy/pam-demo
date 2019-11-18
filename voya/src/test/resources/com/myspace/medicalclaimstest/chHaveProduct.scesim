@@ -94,24 +94,6 @@
               <step>medicalTriggerResults</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>clmProb</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>1570212819411</name>
-            <type>GIVEN</type>
-          </expressionIdentifier>
-          <factIdentifier reference="../../FactMapping[5]/factIdentifier"/>
-          <className>java.lang.String</className>
-          <factAlias>medicalTriggerResults</factAlias>
-          <expressionAlias>clmProb</expressionAlias>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements>
-            <ExpressionElement>
-              <step>medicalTriggerResults</step>
-            </ExpressionElement>
-            <ExpressionElement>
               <step>custHaveProduct</step>
             </ExpressionElement>
           </expressionElements>
@@ -183,14 +165,6 @@
               <type>GIVEN</type>
             </expressionIdentifier>
             <rawValue class="string">Accident</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../FactMappingValue[5]/factIdentifier"/>
-            <expressionIdentifier>
-              <name>1570212819411</name>
-              <type>GIVEN</type>
-            </expressionIdentifier>
-            <rawValue class="string">High</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../FactMappingValue[5]/factIdentifier"/>
@@ -271,7 +245,10 @@
                   <step>clmProb</step>
                 </ExpressionElement>
               </expressionElements>
-              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[6]/expressionIdentifier"/>
+              <expressionIdentifier>
+                <name>1570212819411</name>
+                <type>GIVEN</type>
+              </expressionIdentifier>
               <factIdentifier reference="../../../../factMappingValues/FactMappingValue[5]/factIdentifier"/>
               <className>java.lang.String</className>
               <factAlias>medicalTriggerResults</factAlias>
@@ -286,7 +263,7 @@
                   <step>custHaveProduct</step>
                 </ExpressionElement>
               </expressionElements>
-              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[7]/expressionIdentifier"/>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[6]/expressionIdentifier"/>
               <factIdentifier reference="../../../../factMappingValues/FactMappingValue[5]/factIdentifier"/>
               <className>java.lang.Boolean</className>
               <factAlias>medicalTriggerResults</factAlias>
@@ -328,11 +305,6 @@
           <FactMappingValue>
             <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[5]/factIdentifier"/>
             <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[6]/expressionIdentifier"/>
-            <rawValue class="string">Medium</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[5]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[7]/expressionIdentifier"/>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor reference="../../Scenario/simulationDescriptor"/>
@@ -367,50 +339,6 @@
           <FactMappingValue>
             <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[5]/factIdentifier"/>
             <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[6]/expressionIdentifier"/>
-            <rawValue class="string">High</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[5]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[7]/expressionIdentifier"/>
-          </FactMappingValue>
-        </factMappingValues>
-        <simulationDescriptor reference="../../Scenario/simulationDescriptor"/>
-      </Scenario>
-      <Scenario>
-        <factMappingValues>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue/factIdentifier"/>
-            <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue/expressionIdentifier"/>
-            <rawValue class="string">Has Product, Inactive, High Prob</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[2]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[2]/expressionIdentifier"/>
-            <rawValue class="string">4</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[3]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[3]/expressionIdentifier"/>
-            <rawValue class="string">Accident</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[3]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[4]/expressionIdentifier"/>
-            <rawValue class="string">Inactive</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[5]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[5]/expressionIdentifier"/>
-            <rawValue class="string">Accident</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[5]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[6]/expressionIdentifier"/>
-            <rawValue class="string">High</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[5]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[7]/expressionIdentifier"/>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor reference="../../Scenario/simulationDescriptor"/>

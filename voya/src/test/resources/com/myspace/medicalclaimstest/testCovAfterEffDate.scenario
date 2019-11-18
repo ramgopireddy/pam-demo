@@ -23,11 +23,6 @@
           <value>Accident</value>
           <nature>4</nature>
         </field-data>
-        <field-data>
-          <name>clmProb</name>
-          <value>High</value>
-          <nature>4</nature>
-        </field-data>
       </fieldData>
       <name>tr</name>
       <isModify>false</isModify>
@@ -58,7 +53,7 @@
       <name>covAfterEffectiveDate</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>36</executionTimeResult>
+      <executionTimeResult>29</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -83,7 +78,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2019-10-07 15:20:10.398 UTC</lastRunResult>
+  <lastRunResult>2019-11-13 22:10:54.73 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myspace.medicalclaimstest</packageName>

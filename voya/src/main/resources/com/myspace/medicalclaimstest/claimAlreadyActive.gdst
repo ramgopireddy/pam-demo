@@ -119,22 +119,6 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>215</width>
-          <header>Claim Prob</header>
-          <constraintValueType>3</constraintValueType>
-          <factField>clmProb</factField>
-          <fieldType>String</fieldType>
-          <operator>==</operator>
-          <parameters/>
-          <binding></binding>
-        </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
           <width>203</width>
           <header>Product</header>
           <constraintValueType>3</constraintValueType>
@@ -260,11 +244,6 @@
       </value>
       <value>
         <valueString>&quot;Active-Inforce&quot;</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>&quot;High&quot;</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>

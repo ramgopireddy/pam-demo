@@ -91,24 +91,6 @@
         <FactMapping>
           <expressionElements>
             <ExpressionElement>
-              <step>medicalTriggerResults</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>clmProb</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>1570741539286</name>
-            <type>GIVEN</type>
-          </expressionIdentifier>
-          <factIdentifier reference="../../FactMapping[5]/factIdentifier"/>
-          <className>java.lang.String</className>
-          <factAlias>medicalTriggerResults</factAlias>
-          <expressionAlias>clmProb</expressionAlias>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements>
-            <ExpressionElement>
               <step>existingClaims</step>
             </ExpressionElement>
             <ExpressionElement>
@@ -187,14 +169,6 @@
             <rawValue class="string">Accident</rawValue>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../FactMappingValue[3]/factIdentifier"/>
-            <expressionIdentifier>
-              <name>1570741539286</name>
-              <type>GIVEN</type>
-            </expressionIdentifier>
-            <rawValue class="string">High</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
             <factIdentifier>
               <name>1570741521990</name>
               <className>com.myspace.medicalclaimstest.existingClaims</className>
@@ -211,16 +185,25 @@
               <name>0|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">True</rawValue>
+            <rawValue class="string">null</rawValue>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/expressionIdentifier"/>
+            <factIdentifier>
+              <name>1570741766144</name>
+              <className>com.myspace.medicalclaimstest.chCoverages</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1570741766144</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
             <rawValue class="string">Accident</rawValue>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/expressionIdentifier"/>
+            <factIdentifier reference="../../FactMappingValue[6]/factIdentifier"/>
+            <expressionIdentifier>
+              <name>1570741777760</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
             <rawValue class="string">Active-Inforce</rawValue>
           </FactMappingValue>
         </factMappingValues>
@@ -264,7 +247,10 @@
                   <step>clmProb</step>
                 </ExpressionElement>
               </expressionElements>
-              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[4]/expressionIdentifier"/>
+              <expressionIdentifier>
+                <name>1570741539286</name>
+                <type>GIVEN</type>
+              </expressionIdentifier>
               <factIdentifier reference="../../../../factMappingValues/FactMappingValue[3]/factIdentifier"/>
               <className>java.lang.String</className>
               <factAlias>medicalTriggerResults</factAlias>
@@ -279,8 +265,8 @@
                   <step>claimProduct</step>
                 </ExpressionElement>
               </expressionElements>
-              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[5]/expressionIdentifier"/>
-              <factIdentifier reference="../../../../factMappingValues/FactMappingValue[5]/factIdentifier"/>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[4]/expressionIdentifier"/>
+              <factIdentifier reference="../../../../factMappingValues/FactMappingValue[4]/factIdentifier"/>
               <className>java.lang.String</className>
               <factAlias>existingClaims</factAlias>
               <expressionAlias>claimProduct</expressionAlias>
@@ -294,7 +280,7 @@
                   <step>claimPaid</step>
                 </ExpressionElement>
               </expressionElements>
-              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[6]/expressionIdentifier"/>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[5]/expressionIdentifier"/>
               <factIdentifier reference="../../../../factMappingValues/FactMappingValue[3]/factIdentifier"/>
               <className>java.lang.Boolean</className>
               <factAlias>medicalTriggerResults</factAlias>
@@ -318,18 +304,13 @@
             <rawValue class="string">Accident</rawValue>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[3]/factIdentifier"/>
+            <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[4]/factIdentifier"/>
             <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[4]/expressionIdentifier"/>
-            <rawValue class="string">High</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[5]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[5]/expressionIdentifier"/>
             <rawValue class="string">Accident</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[3]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[6]/expressionIdentifier"/>
+            <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[5]/expressionIdentifier"/>
             <rawValue class="string">False</rawValue>
           </FactMappingValue>
           <FactMappingValue>
@@ -338,13 +319,13 @@
             <rawValue class="string">2</rawValue>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/expressionIdentifier"/>
+            <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[6]/factIdentifier"/>
+            <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[6]/expressionIdentifier"/>
             <rawValue class="string">Accident</rawValue>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/expressionIdentifier"/>
+            <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[6]/factIdentifier"/>
+            <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[7]/expressionIdentifier"/>
             <rawValue class="string">Active-Inforce</rawValue>
           </FactMappingValue>
         </factMappingValues>

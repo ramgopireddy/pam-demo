@@ -11,10 +11,12 @@ public class medicalTriggerResults implements java.io.Serializable {
 	static final long serialVersionUID = 1L;
 
 	@org.kie.api.definition.type.Label("Product Name")
+	@org.kie.api.definition.type.Description("Name of the product that had a match to the benefit code")
 	private java.lang.String prodName;
 	@org.kie.api.definition.type.Label("Claim Probability")
 	private java.lang.String clmProb;
 	@org.kie.api.definition.type.Label("Product Trigger")
+	@org.kie.api.definition.type.Description("Benefit category for the section of the product that had a match to the medical code")
 	private java.lang.String prodTrigger;
 	@org.kie.api.definition.type.Label("Group Offered Product")
 	private java.lang.Boolean groupOfferProduct;
@@ -26,11 +28,14 @@ public class medicalTriggerResults implements java.io.Serializable {
 	private java.lang.Boolean eventAfterCovStart;
 
 	@org.kie.api.definition.type.Label("Medical Code Description")
+	@org.kie.api.definition.type.Description("Description of the medical code that matched what was in the medical event file")
 	private java.lang.String codeDesc;
 	@org.kie.api.definition.type.Label("Claim Already Paid For Product")
 	private java.lang.Boolean claimPaid;
-	@org.kie.api.definition.type.Label(value = "Send Email")
+	@org.kie.api.definition.type.Label("Send Email")
 	private java.lang.Boolean sendEmail;
+	@org.kie.api.definition.type.Label("Meet Probability Requirement")
+	private Boolean meetProb;
 	public medicalTriggerResults() {
 	}
 
@@ -106,12 +111,32 @@ public class medicalTriggerResults implements java.io.Serializable {
 		this.sendEmail = sendEmail;
 	}
 
+	@Override
+	public String toString() {
+		return "medicalTriggerResults [prodName=" + prodName + ", clmProb="
+				+ clmProb + ", prodTrigger=" + prodTrigger
+				+ ", groupOfferProduct=" + groupOfferProduct
+				+ ", custHaveProduct=" + custHaveProduct
+				+ ", eventAfterCovStart=" + eventAfterCovStart + ", codeDesc="
+				+ codeDesc + ", claimPaid=" + claimPaid + ", sendEmail="
+				+ sendEmail + "]";
+	}
+
+	public java.lang.Boolean getMeetProb() {
+		return this.meetProb;
+	}
+
+	public void setMeetProb(java.lang.Boolean meetProb) {
+		this.meetProb = meetProb;
+	}
+
 	public medicalTriggerResults(java.lang.String prodName,
 			java.lang.String clmProb, java.lang.String prodTrigger,
 			java.lang.Boolean groupOfferProduct,
 			java.lang.Boolean custHaveProduct,
 			java.lang.Boolean eventAfterCovStart, java.lang.String codeDesc,
-			java.lang.Boolean claimPaid, java.lang.Boolean sendEmail) {
+			java.lang.Boolean claimPaid, java.lang.Boolean sendEmail,
+			java.lang.Boolean meetProb) {
 		this.prodName = prodName;
 		this.clmProb = clmProb;
 		this.prodTrigger = prodTrigger;
@@ -121,14 +146,7 @@ public class medicalTriggerResults implements java.io.Serializable {
 		this.codeDesc = codeDesc;
 		this.claimPaid = claimPaid;
 		this.sendEmail = sendEmail;
-	}
-	
-	@Override
-	public String toString() {
-		return "medicalTriggerResults [prodName=" + prodName + ", clmProb=" + clmProb + ", prodTrigger=" + prodTrigger
-				+ ", groupOfferProduct=" + groupOfferProduct + ", custHaveProduct=" + custHaveProduct
-				+ ", eventAfterCovStart=" + eventAfterCovStart + ", codeDesc=" + codeDesc + ", claimPaid=" + claimPaid
-				+ ", sendEmail=" + sendEmail + "]";
+		this.meetProb = meetProb;
 	}
 
 }
