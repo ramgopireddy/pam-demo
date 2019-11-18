@@ -14,8 +14,6 @@ public class coverageHolder implements java.io.Serializable {
 	private java.lang.String chFirstName;
 	@org.kie.api.definition.type.Label("Coverage Holder Last Name")
 	private java.lang.String chLastName;
-	@org.kie.api.definition.type.Label("CoverageHolder Group")
-	private employerGroup chGroup;
 	@org.kie.api.definition.type.Label("Coverage Holder Medical Authorization")
 	private java.lang.Boolean chMedAuth;
 	@org.kie.api.definition.type.Label("Coverage Holder SSN")
@@ -23,8 +21,11 @@ public class coverageHolder implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Coverage Holder Initial Coverage Date")
 	private java.util.Date chInitCovDt;
 
-	@org.kie.api.definition.type.Label(value = "Coverage Holder Coverages")
+	@org.kie.api.definition.type.Label("Coverage Holder Coverages")
 	private java.util.List<com.myspace.medicalclaimstest.chCoverages> chCoverages;
+
+	@org.kie.api.definition.type.Label(value = "Existing Claims")
+	private java.util.List<com.myspace.medicalclaimstest.existingClaims> existingClaims;
 
 	public coverageHolder() {
 	}
@@ -77,14 +78,6 @@ public class coverageHolder implements java.io.Serializable {
 		this.chInitCovDt = chInitCovDt;
 	}
 
-	public com.myspace.medicalclaimstest.employerGroup getChGroup() {
-		return this.chGroup;
-	}
-
-	public void setChGroup(com.myspace.medicalclaimstest.employerGroup chGroup) {
-		this.chGroup = chGroup;
-	}
-
 	public java.util.List<com.myspace.medicalclaimstest.chCoverages> getChCoverages() {
 		return this.chCoverages;
 	}
@@ -94,30 +87,40 @@ public class coverageHolder implements java.io.Serializable {
 		this.chCoverages = chCoverages;
 	}
 
+	@Override
+	public String toString() {
+		return "coverageHolder [chEmail=" + chEmail + ", chFirstName="
+				+ chFirstName + ", chLastName=" + chLastName + ", chMedAuth="
+				+ chMedAuth + ", chSSN=" + chSSN + ", chInitCovDt="
+				+ chInitCovDt + ", chCoverages=" + chCoverages + ", existingClaims=" + existingClaims + "]";
+	}
+
+	public java.util.List<com.myspace.medicalclaimstest.existingClaims> getExistingClaims() {
+		return this.existingClaims;
+	}
+
+	public void setExistingClaims(
+			java.util.List<com.myspace.medicalclaimstest.existingClaims> existingClaims) {
+		this.existingClaims = existingClaims;
+	}
+
 	public coverageHolder(
 			java.lang.String chEmail,
 			java.lang.String chFirstName,
 			java.lang.String chLastName,
-			com.myspace.medicalclaimstest.employerGroup chGroup,
 			java.lang.Boolean chMedAuth,
 			java.lang.String chSSN,
 			java.util.Date chInitCovDt,
-			java.util.List<com.myspace.medicalclaimstest.chCoverages> chCoverages) {
+			java.util.List<com.myspace.medicalclaimstest.chCoverages> chCoverages,
+			java.util.List<com.myspace.medicalclaimstest.existingClaims> existingClaims) {
 		this.chEmail = chEmail;
 		this.chFirstName = chFirstName;
 		this.chLastName = chLastName;
-		this.chGroup = chGroup;
 		this.chMedAuth = chMedAuth;
 		this.chSSN = chSSN;
 		this.chInitCovDt = chInitCovDt;
 		this.chCoverages = chCoverages;
-	}
-	
-	@Override
-	public String toString() {
-		return "coverageHolder [chEmail=" + chEmail + ", chFirstName=" + chFirstName + ", chLastName=" + chLastName
-				+ ", chGroup=" + chGroup + ", chMedAuth=" + chMedAuth + ", chSSN=" + chSSN + ", chInitCovDt="
-				+ chInitCovDt + ", chCoverages=" + chCoverages + "]";
+		this.existingClaims = existingClaims;
 	}
 
 }

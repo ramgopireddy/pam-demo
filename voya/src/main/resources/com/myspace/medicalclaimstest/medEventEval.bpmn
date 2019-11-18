@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_SvWS4Ab6EeqJQc7hr1-_Og" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_NZaPQAo3EeqkmsskmPuzuQ" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
   <bpmn2:itemDefinition id="_chCoveragesItem" structureRef="com.myspace.medicalclaimstest.chCoverages"/>
   <bpmn2:itemDefinition id="_coverageHolderItem" structureRef="com.myspace.medicalclaimstest.coverageHolder"/>
   <bpmn2:itemDefinition id="_employerGroupItem" structureRef="com.myspace.medicalclaimstest.employerGroup"/>
@@ -8,30 +8,36 @@
   <bpmn2:itemDefinition id="_medicalEventItem" structureRef="com.myspace.medicalclaimstest.medicalEvent"/>
   <bpmn2:itemDefinition id="_medicalEventCodeEvalItem" structureRef="com.myspace.medicalEventCodeEval"/>
   <bpmn2:itemDefinition id="_medicalTriggerResultsItem" structureRef="com.myspace.medicalclaimstest.medicalTriggerResults"/>
-  <bpmn2:itemDefinition id="__70CC3776-E19A-4781-94C9-3A031BBBA95E_namespaceInputXItem" structureRef="java.lang.String"/>
-  <bpmn2:itemDefinition id="__70CC3776-E19A-4781-94C9-3A031BBBA95E_modelInputXItem" structureRef="java.lang.String"/>
-  <bpmn2:itemDefinition id="__70CC3776-E19A-4781-94C9-3A031BBBA95E_decisionInputXItem" structureRef="java.lang.String"/>
-  <bpmn2:itemDefinition id="__70CC3776-E19A-4781-94C9-3A031BBBA95E_chCoveragesInputXItem" structureRef="com.myspace.medicalclaimstest.chCoverages"/>
-  <bpmn2:itemDefinition id="__70CC3776-E19A-4781-94C9-3A031BBBA95E_eventInputXItem" structureRef="com.myspace.medicalclaimstest.medicalEvent"/>
-  <bpmn2:itemDefinition id="__70CC3776-E19A-4781-94C9-3A031BBBA95E_custHaveProductOutputXItem" structureRef="com.myspace.medicalclaimstest.medicalTriggerResults"/>
+  <bpmn2:itemDefinition id="__6F58666C-D820-465D-BAF2-FFC02D271075_namespaceInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__6F58666C-D820-465D-BAF2-FFC02D271075_modelInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__6F58666C-D820-465D-BAF2-FFC02D271075_decisionInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__6F58666C-D820-465D-BAF2-FFC02D271075_chInputXItem" structureRef="com.myspace.medicalclaimstest.coverageHolder"/>
+  <bpmn2:itemDefinition id="__6F58666C-D820-465D-BAF2-FFC02D271075_eventInputXItem" structureRef="com.myspace.medicalclaimstest.medicalEvent"/>
+  <bpmn2:itemDefinition id="__6F58666C-D820-465D-BAF2-FFC02D271075_eventOutputXItem" structureRef="com.myspace.medicalclaimstest.medicalEvent"/>
+  <bpmn2:itemDefinition id="__A4E7DA3E-D929-4352-A902-F96C6CD7FB47_namespaceInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__A4E7DA3E-D929-4352-A902-F96C6CD7FB47_modelInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__A4E7DA3E-D929-4352-A902-F96C6CD7FB47_decisionInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__A4E7DA3E-D929-4352-A902-F96C6CD7FB47_eventInputXItem" structureRef="com.myspace.medicalclaimstest.medicalEvent"/>
+  <bpmn2:itemDefinition id="__A4E7DA3E-D929-4352-A902-F96C6CD7FB47_chInputXItem" structureRef="com.myspace.medicalclaimstest.coverageHolder"/>
+  <bpmn2:itemDefinition id="__A4E7DA3E-D929-4352-A902-F96C6CD7FB47_eventOutputXItem" structureRef="com.myspace.medicalclaimstest.medicalEvent"/>
+  <bpmn2:itemDefinition id="__77F540BC-DCDD-4668-A7B3-48439E01593B_namespaceInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__77F540BC-DCDD-4668-A7B3-48439E01593B_modelInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__77F540BC-DCDD-4668-A7B3-48439E01593B_decisionInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__77F540BC-DCDD-4668-A7B3-48439E01593B_eventInputXItem" structureRef="com.myspace.medicalclaimstest.medicalEvent"/>
+  <bpmn2:itemDefinition id="__77F540BC-DCDD-4668-A7B3-48439E01593B_chInputXItem" structureRef="com.myspace.medicalclaimstest.coverageHolder"/>
+  <bpmn2:itemDefinition id="__77F540BC-DCDD-4668-A7B3-48439E01593B_eventOutputXItem" structureRef="com.myspace.medicalclaimstest.medicalEvent"/>
   <bpmn2:itemDefinition id="__2C92680A-4A0D-4F77-B840-47111E27EE5D_namespaceInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__2C92680A-4A0D-4F77-B840-47111E27EE5D_modelInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__2C92680A-4A0D-4F77-B840-47111E27EE5D_decisionInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__2C92680A-4A0D-4F77-B840-47111E27EE5D_eventInputXItem" structureRef="com.myspace.medicalclaimstest.medicalEvent"/>
-  <bpmn2:itemDefinition id="__2C92680A-4A0D-4F77-B840-47111E27EE5D_chInputXItem" structureRef="com.myspace.medicalclaimstest.coverageHolder"/>
+  <bpmn2:itemDefinition id="__2C92680A-4A0D-4F77-B840-47111E27EE5D_employerGroupInputXItem" structureRef="com.myspace.medicalclaimstest.employerGroup"/>
   <bpmn2:itemDefinition id="__2C92680A-4A0D-4F77-B840-47111E27EE5D_eventOutputXItem" structureRef="com.myspace.medicalclaimstest.medicalEvent"/>
   <bpmn2:itemDefinition id="__3D88AB36-FBC6-42D1-8999-AC1AE0626500_namespaceInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__3D88AB36-FBC6-42D1-8999-AC1AE0626500_modelInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__3D88AB36-FBC6-42D1-8999-AC1AE0626500_decisionInputXItem" structureRef="java.lang.String"/>
-  <bpmn2:itemDefinition id="__3D88AB36-FBC6-42D1-8999-AC1AE0626500_groupCovInputXItem" structureRef="com.myspace.medicalclaimstest.groupCoverages"/>
-  <bpmn2:itemDefinition id="__3D88AB36-FBC6-42D1-8999-AC1AE0626500_eventInputXItem" structureRef="com.myspace.medicalclaimstest.medicalEvent"/>
-  <bpmn2:itemDefinition id="__3D88AB36-FBC6-42D1-8999-AC1AE0626500_medicalTriggerResultsOutputXItem" structureRef="com.myspace.medicalclaimstest.medicalTriggerResults"/>
-  <bpmn2:itemDefinition id="__6E3C5156-F49A-4E26-B46E-31BD5A99A14A_namespaceInputXItem" structureRef="java.lang.String"/>
-  <bpmn2:itemDefinition id="__6E3C5156-F49A-4E26-B46E-31BD5A99A14A_modelInputXItem" structureRef="java.lang.String"/>
-  <bpmn2:itemDefinition id="__6E3C5156-F49A-4E26-B46E-31BD5A99A14A_decisionInputXItem" structureRef="java.lang.String"/>
-  <bpmn2:itemDefinition id="__6E3C5156-F49A-4E26-B46E-31BD5A99A14A_eventInputXItem" structureRef="com.myspace.medicalclaimstest.medicalEvent"/>
-  <bpmn2:itemDefinition id="__6E3C5156-F49A-4E26-B46E-31BD5A99A14A_chCoveragesInputXItem" structureRef="com.myspace.medicalclaimstest.chCoverages"/>
-  <bpmn2:itemDefinition id="__6E3C5156-F49A-4E26-B46E-31BD5A99A14A_eventAfterCovStartOutputXItem" structureRef="com.myspace.medicalclaimstest.medicalTriggerResults"/>
+  <bpmn2:itemDefinition id="__3D88AB36-FBC6-42D1-8999-AC1AE0626500_employerGroupInputXItem" structureRef="com.myspace.medicalclaimstest.employerGroup"/>
+  <bpmn2:itemDefinition id="__3D88AB36-FBC6-42D1-8999-AC1AE0626500_medicalEventInputXItem" structureRef="com.myspace.medicalclaimstest.medicalEvent"/>
+  <bpmn2:itemDefinition id="__3D88AB36-FBC6-42D1-8999-AC1AE0626500_medicalEventOutputXItem" structureRef="com.myspace.medicalclaimstest.medicalEvent"/>
   <bpmn2:itemDefinition id="__02F0524A-5E0D-42D2-8801-39ADF3A21581_namespaceInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__02F0524A-5E0D-42D2-8801-39ADF3A21581_modelInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__02F0524A-5E0D-42D2-8801-39ADF3A21581_decisionInputXItem" structureRef="java.lang.String"/>
@@ -81,7 +87,7 @@
         </drools:metaData>
       </bpmn2:extensionElements>
     </bpmn2:sequenceFlow>
-    <bpmn2:sequenceFlow id="_872DCCD3-B1EC-42B6-8698-FF9C9AB2BDC8" sourceRef="_6E3C5156-F49A-4E26-B46E-31BD5A99A14A" targetRef="_F2810586-428E-40CB-AE80-F85B7B233A43">
+    <bpmn2:sequenceFlow id="_483EC07A-8EFD-4F41-A23A-AB5C05ED7F9D" sourceRef="_A4E7DA3E-D929-4352-A902-F96C6CD7FB47" targetRef="_77F540BC-DCDD-4668-A7B3-48439E01593B">
       <bpmn2:extensionElements>
         <drools:metaData name="isAutoConnection.source">
           <drools:metaValue><![CDATA[true]]></drools:metaValue>
@@ -91,24 +97,37 @@
         </drools:metaData>
       </bpmn2:extensionElements>
     </bpmn2:sequenceFlow>
-    <bpmn2:sequenceFlow id="_A32E9106-D5F4-4055-8A82-4E4BB5A0FAB5" sourceRef="_70CC3776-E19A-4781-94C9-3A031BBBA95E" targetRef="_6E3C5156-F49A-4E26-B46E-31BD5A99A14A">
+    <bpmn2:sequenceFlow id="_51724F87-719D-4B00-A4A4-E87EBBEC093E" sourceRef="_3D88AB36-FBC6-42D1-8999-AC1AE0626500" targetRef="_A4E7DA3E-D929-4352-A902-F96C6CD7FB47">
       <bpmn2:extensionElements>
         <drools:metaData name="isAutoConnection.source">
           <drools:metaValue><![CDATA[true]]></drools:metaValue>
         </drools:metaData>
         <drools:metaData name="isAutoConnection.target">
-          <drools:metaValue><![CDATA[true]]></drools:metaValue>
-        </drools:metaData>
-      </bpmn2:extensionElements>
-    </bpmn2:sequenceFlow>
-    <bpmn2:sequenceFlow id="_51724F87-719D-4B00-A4A4-E87EBBEC093E" sourceRef="_3D88AB36-FBC6-42D1-8999-AC1AE0626500" targetRef="_70CC3776-E19A-4781-94C9-3A031BBBA95E">
-      <bpmn2:extensionElements>
-        <drools:metaData name="isAutoConnection.source">
           <drools:metaValue><![CDATA[true]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_83A191EC-750F-4B65-BBDA-54F3A5E693D5" sourceRef="_70116930-60EA-475C-8F8C-943ADC62DE70" targetRef="_32F8EAF3-6084-4804-B34A-B482EC2A0702">
+      <bpmn2:extensionElements>
+        <drools:metaData name="isAutoConnection.source">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+        <drools:metaData name="isAutoConnection.target">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="_DCDB3509-1BEB-4BDF-BF4E-222D2ED81D41" sourceRef="_6F58666C-D820-465D-BAF2-FFC02D271075" targetRef="_F2810586-428E-40CB-AE80-F85B7B233A43">
+      <bpmn2:extensionElements>
+        <drools:metaData name="isAutoConnection.source">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+        <drools:metaData name="isAutoConnection.target">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="_B5295655-96B2-4204-B29E-F8A8B7198C83" sourceRef="_77F540BC-DCDD-4668-A7B3-48439E01593B" targetRef="_6F58666C-D820-465D-BAF2-FFC02D271075">
       <bpmn2:extensionElements>
         <drools:metaData name="isAutoConnection.source">
           <drools:metaValue><![CDATA[true]]></drools:metaValue>
@@ -129,27 +148,27 @@
       </bpmn2:extensionElements>
       <bpmn2:incoming>_83A191EC-750F-4B65-BBDA-54F3A5E693D5</bpmn2:incoming>
       <bpmn2:outgoing>_76565C46-0D95-4041-B58B-A54DD98750FB</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_SvWS4Qb6EeqJQc7hr1-_Og">
+      <bpmn2:ioSpecification id="_NZaPQQo3EeqkmsskmPuzuQ">
         <bpmn2:dataInput id="_32F8EAF3-6084-4804-B34A-B482EC2A0702_eventInputX" drools:dtype="com.myspace.medicalclaimstest.medicalEvent" itemSubjectRef="__32F8EAF3-6084-4804-B34A-B482EC2A0702_eventInputXItem" name="event"/>
         <bpmn2:dataInput id="_32F8EAF3-6084-4804-B34A-B482EC2A0702_chInputX" drools:dtype="com.myspace.medicalclaimstest.coverageHolder" itemSubjectRef="__32F8EAF3-6084-4804-B34A-B482EC2A0702_chInputXItem" name="ch"/>
         <bpmn2:dataOutput id="_32F8EAF3-6084-4804-B34A-B482EC2A0702_eventOutputX" drools:dtype="com.myspace.medicalclaimstest.medicalEvent" itemSubjectRef="__32F8EAF3-6084-4804-B34A-B482EC2A0702_eventOutputXItem" name="event"/>
-        <bpmn2:inputSet id="_SvWS4gb6EeqJQc7hr1-_Og">
+        <bpmn2:inputSet id="_NZaPQgo3EeqkmsskmPuzuQ">
           <bpmn2:dataInputRefs>_32F8EAF3-6084-4804-B34A-B482EC2A0702_eventInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_32F8EAF3-6084-4804-B34A-B482EC2A0702_chInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_SvWS4wb6EeqJQc7hr1-_Og">
+        <bpmn2:outputSet id="_NZaPQwo3EeqkmsskmPuzuQ">
           <bpmn2:dataOutputRefs>_32F8EAF3-6084-4804-B34A-B482EC2A0702_eventOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_SvWS5Ab6EeqJQc7hr1-_Og">
+      <bpmn2:dataInputAssociation id="_NZaPRAo3EeqkmsskmPuzuQ">
         <bpmn2:sourceRef>medicalEvent</bpmn2:sourceRef>
         <bpmn2:targetRef>_32F8EAF3-6084-4804-B34A-B482EC2A0702_eventInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_SvWS5Qb6EeqJQc7hr1-_Og">
+      <bpmn2:dataInputAssociation id="_NZaPRQo3EeqkmsskmPuzuQ">
         <bpmn2:sourceRef>coverageHolder</bpmn2:sourceRef>
         <bpmn2:targetRef>_32F8EAF3-6084-4804-B34A-B482EC2A0702_chInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_SvWS5gb6EeqJQc7hr1-_Og">
+      <bpmn2:dataOutputAssociation id="_NZaPRgo3EeqkmsskmPuzuQ">
         <bpmn2:sourceRef>_32F8EAF3-6084-4804-B34A-B482EC2A0702_eventOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>medicalEvent</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
@@ -162,68 +181,35 @@
       </bpmn2:extensionElements>
       <bpmn2:incoming>_48A3A5E8-60BD-438E-8DE0-84B12AD6E3B5</bpmn2:incoming>
       <bpmn2:outgoing>_7BDBD01D-8CAB-4BAB-BAB8-834593FECE1D</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_SvWS5wb6EeqJQc7hr1-_Og">
+      <bpmn2:ioSpecification id="_NZaPRwo3EeqkmsskmPuzuQ">
         <bpmn2:dataInput id="_02F0524A-5E0D-42D2-8801-39ADF3A21581_eventInputX" drools:dtype="com.myspace.medicalclaimstest.medicalEvent" itemSubjectRef="__02F0524A-5E0D-42D2-8801-39ADF3A21581_eventInputXItem" name="event"/>
         <bpmn2:dataInput id="_02F0524A-5E0D-42D2-8801-39ADF3A21581_chInputX" drools:dtype="com.myspace.medicalclaimstest.coverageHolder" itemSubjectRef="__02F0524A-5E0D-42D2-8801-39ADF3A21581_chInputXItem" name="ch"/>
         <bpmn2:dataInput id="_02F0524A-5E0D-42D2-8801-39ADF3A21581_groupInputX" drools:dtype="com.myspace.medicalclaimstest.employerGroup" itemSubjectRef="__02F0524A-5E0D-42D2-8801-39ADF3A21581_groupInputXItem" name="group"/>
         <bpmn2:dataOutput id="_02F0524A-5E0D-42D2-8801-39ADF3A21581_eventOutputX" drools:dtype="com.myspace.medicalclaimstest.medicalEvent" itemSubjectRef="__02F0524A-5E0D-42D2-8801-39ADF3A21581_eventOutputXItem" name="event"/>
-        <bpmn2:inputSet id="_SvWS6Ab6EeqJQc7hr1-_Og">
+        <bpmn2:inputSet id="_NZaPSAo3EeqkmsskmPuzuQ">
           <bpmn2:dataInputRefs>_02F0524A-5E0D-42D2-8801-39ADF3A21581_eventInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_02F0524A-5E0D-42D2-8801-39ADF3A21581_chInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_02F0524A-5E0D-42D2-8801-39ADF3A21581_groupInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_SvWS6Qb6EeqJQc7hr1-_Og">
+        <bpmn2:outputSet id="_NZaPSQo3EeqkmsskmPuzuQ">
           <bpmn2:dataOutputRefs>_02F0524A-5E0D-42D2-8801-39ADF3A21581_eventOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_SvWS6gb6EeqJQc7hr1-_Og">
+      <bpmn2:dataInputAssociation id="_NZaPSgo3EeqkmsskmPuzuQ">
         <bpmn2:sourceRef>medicalEvent</bpmn2:sourceRef>
         <bpmn2:targetRef>_02F0524A-5E0D-42D2-8801-39ADF3A21581_eventInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_SvWS6wb6EeqJQc7hr1-_Og">
+      <bpmn2:dataInputAssociation id="_NZaPSwo3EeqkmsskmPuzuQ">
         <bpmn2:sourceRef>coverageHolder</bpmn2:sourceRef>
         <bpmn2:targetRef>_02F0524A-5E0D-42D2-8801-39ADF3A21581_chInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_SvWS7Ab6EeqJQc7hr1-_Og">
+      <bpmn2:dataInputAssociation id="_NZaPTAo3EeqkmsskmPuzuQ">
         <bpmn2:sourceRef>employerGroup</bpmn2:sourceRef>
         <bpmn2:targetRef>_02F0524A-5E0D-42D2-8801-39ADF3A21581_groupInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_SvWS7Qb6EeqJQc7hr1-_Og">
+      <bpmn2:dataOutputAssociation id="_NZaPTQo3EeqkmsskmPuzuQ">
         <bpmn2:sourceRef>_02F0524A-5E0D-42D2-8801-39ADF3A21581_eventOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>medicalEvent</bpmn2:targetRef>
-      </bpmn2:dataOutputAssociation>
-    </bpmn2:businessRuleTask>
-    <bpmn2:businessRuleTask id="_6E3C5156-F49A-4E26-B46E-31BD5A99A14A" drools:ruleFlowGroup="covAfterEffectiveDate" name="Event After Coverage Date" implementation="http://www.jboss.org/drools/rule">
-      <bpmn2:extensionElements>
-        <drools:metaData name="elementname">
-          <drools:metaValue><![CDATA[Event After Coverage Date]]></drools:metaValue>
-        </drools:metaData>
-      </bpmn2:extensionElements>
-      <bpmn2:incoming>_A32E9106-D5F4-4055-8A82-4E4BB5A0FAB5</bpmn2:incoming>
-      <bpmn2:outgoing>_872DCCD3-B1EC-42B6-8698-FF9C9AB2BDC8</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_SvWS7gb6EeqJQc7hr1-_Og">
-        <bpmn2:dataInput id="_6E3C5156-F49A-4E26-B46E-31BD5A99A14A_eventInputX" drools:dtype="com.myspace.medicalclaimstest.medicalEvent" itemSubjectRef="__6E3C5156-F49A-4E26-B46E-31BD5A99A14A_eventInputXItem" name="event"/>
-        <bpmn2:dataInput id="_6E3C5156-F49A-4E26-B46E-31BD5A99A14A_chCoveragesInputX" drools:dtype="com.myspace.medicalclaimstest.chCoverages" itemSubjectRef="__6E3C5156-F49A-4E26-B46E-31BD5A99A14A_chCoveragesInputXItem" name="chCoverages"/>
-        <bpmn2:dataOutput id="_6E3C5156-F49A-4E26-B46E-31BD5A99A14A_eventAfterCovStartOutputX" drools:dtype="com.myspace.medicalclaimstest.medicalTriggerResults" itemSubjectRef="__6E3C5156-F49A-4E26-B46E-31BD5A99A14A_eventAfterCovStartOutputXItem" name="eventAfterCovStart"/>
-        <bpmn2:inputSet id="_SvWS7wb6EeqJQc7hr1-_Og">
-          <bpmn2:dataInputRefs>_6E3C5156-F49A-4E26-B46E-31BD5A99A14A_eventInputX</bpmn2:dataInputRefs>
-          <bpmn2:dataInputRefs>_6E3C5156-F49A-4E26-B46E-31BD5A99A14A_chCoveragesInputX</bpmn2:dataInputRefs>
-        </bpmn2:inputSet>
-        <bpmn2:outputSet id="_SvWS8Ab6EeqJQc7hr1-_Og">
-          <bpmn2:dataOutputRefs>_6E3C5156-F49A-4E26-B46E-31BD5A99A14A_eventAfterCovStartOutputX</bpmn2:dataOutputRefs>
-        </bpmn2:outputSet>
-      </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_SvWS8Qb6EeqJQc7hr1-_Og">
-        <bpmn2:sourceRef>medicalEvent</bpmn2:sourceRef>
-        <bpmn2:targetRef>_6E3C5156-F49A-4E26-B46E-31BD5A99A14A_eventInputX</bpmn2:targetRef>
-      </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_SvWS8gb6EeqJQc7hr1-_Og">
-        <bpmn2:sourceRef>chCoverages</bpmn2:sourceRef>
-        <bpmn2:targetRef>_6E3C5156-F49A-4E26-B46E-31BD5A99A14A_chCoveragesInputX</bpmn2:targetRef>
-      </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_SvWS8wb6EeqJQc7hr1-_Og">
-        <bpmn2:sourceRef>_6E3C5156-F49A-4E26-B46E-31BD5A99A14A_eventAfterCovStartOutputX</bpmn2:sourceRef>
-        <bpmn2:targetRef>medicalTriggerResults</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:businessRuleTask>
     <bpmn2:businessRuleTask id="_3D88AB36-FBC6-42D1-8999-AC1AE0626500" drools:ruleFlowGroup="groupOfferProduct" name="Group Offers Product" implementation="http://www.jboss.org/drools/rule">
@@ -234,29 +220,29 @@
       </bpmn2:extensionElements>
       <bpmn2:incoming>_7BDBD01D-8CAB-4BAB-BAB8-834593FECE1D</bpmn2:incoming>
       <bpmn2:outgoing>_51724F87-719D-4B00-A4A4-E87EBBEC093E</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_SvWS9Ab6EeqJQc7hr1-_Og">
-        <bpmn2:dataInput id="_3D88AB36-FBC6-42D1-8999-AC1AE0626500_groupCovInputX" drools:dtype="com.myspace.medicalclaimstest.groupCoverages" itemSubjectRef="__3D88AB36-FBC6-42D1-8999-AC1AE0626500_groupCovInputXItem" name="groupCov"/>
-        <bpmn2:dataInput id="_3D88AB36-FBC6-42D1-8999-AC1AE0626500_eventInputX" drools:dtype="com.myspace.medicalclaimstest.medicalEvent" itemSubjectRef="__3D88AB36-FBC6-42D1-8999-AC1AE0626500_eventInputXItem" name="event"/>
-        <bpmn2:dataOutput id="_3D88AB36-FBC6-42D1-8999-AC1AE0626500_medicalTriggerResultsOutputX" drools:dtype="com.myspace.medicalclaimstest.medicalTriggerResults" itemSubjectRef="__3D88AB36-FBC6-42D1-8999-AC1AE0626500_medicalTriggerResultsOutputXItem" name="medicalTriggerResults"/>
-        <bpmn2:inputSet id="_SvWS9Qb6EeqJQc7hr1-_Og">
-          <bpmn2:dataInputRefs>_3D88AB36-FBC6-42D1-8999-AC1AE0626500_groupCovInputX</bpmn2:dataInputRefs>
-          <bpmn2:dataInputRefs>_3D88AB36-FBC6-42D1-8999-AC1AE0626500_eventInputX</bpmn2:dataInputRefs>
+      <bpmn2:ioSpecification id="_NZaPTgo3EeqkmsskmPuzuQ">
+        <bpmn2:dataInput id="_3D88AB36-FBC6-42D1-8999-AC1AE0626500_employerGroupInputX" drools:dtype="com.myspace.medicalclaimstest.employerGroup" itemSubjectRef="__3D88AB36-FBC6-42D1-8999-AC1AE0626500_employerGroupInputXItem" name="employerGroup"/>
+        <bpmn2:dataInput id="_3D88AB36-FBC6-42D1-8999-AC1AE0626500_medicalEventInputX" drools:dtype="com.myspace.medicalclaimstest.medicalEvent" itemSubjectRef="__3D88AB36-FBC6-42D1-8999-AC1AE0626500_medicalEventInputXItem" name="medicalEvent"/>
+        <bpmn2:dataOutput id="_3D88AB36-FBC6-42D1-8999-AC1AE0626500_medicalEventOutputX" drools:dtype="com.myspace.medicalclaimstest.medicalEvent" itemSubjectRef="__3D88AB36-FBC6-42D1-8999-AC1AE0626500_medicalEventOutputXItem" name="medicalEvent"/>
+        <bpmn2:inputSet id="_NZaPTwo3EeqkmsskmPuzuQ">
+          <bpmn2:dataInputRefs>_3D88AB36-FBC6-42D1-8999-AC1AE0626500_employerGroupInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_3D88AB36-FBC6-42D1-8999-AC1AE0626500_medicalEventInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_SvWS9gb6EeqJQc7hr1-_Og">
-          <bpmn2:dataOutputRefs>_3D88AB36-FBC6-42D1-8999-AC1AE0626500_medicalTriggerResultsOutputX</bpmn2:dataOutputRefs>
+        <bpmn2:outputSet id="_NZaPUAo3EeqkmsskmPuzuQ">
+          <bpmn2:dataOutputRefs>_3D88AB36-FBC6-42D1-8999-AC1AE0626500_medicalEventOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_SvWS9wb6EeqJQc7hr1-_Og">
-        <bpmn2:sourceRef>groupCoverages</bpmn2:sourceRef>
-        <bpmn2:targetRef>_3D88AB36-FBC6-42D1-8999-AC1AE0626500_groupCovInputX</bpmn2:targetRef>
+      <bpmn2:dataInputAssociation id="_NZaPUQo3EeqkmsskmPuzuQ">
+        <bpmn2:sourceRef>employerGroup</bpmn2:sourceRef>
+        <bpmn2:targetRef>_3D88AB36-FBC6-42D1-8999-AC1AE0626500_employerGroupInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_SvWS-Ab6EeqJQc7hr1-_Og">
-        <bpmn2:sourceRef>medicalEventCodeEval</bpmn2:sourceRef>
-        <bpmn2:targetRef>_3D88AB36-FBC6-42D1-8999-AC1AE0626500_eventInputX</bpmn2:targetRef>
+      <bpmn2:dataInputAssociation id="_NZaPUgo3EeqkmsskmPuzuQ">
+        <bpmn2:sourceRef>medicalEvent</bpmn2:sourceRef>
+        <bpmn2:targetRef>_3D88AB36-FBC6-42D1-8999-AC1AE0626500_medicalEventInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_SvWS-Qb6EeqJQc7hr1-_Og">
-        <bpmn2:sourceRef>_3D88AB36-FBC6-42D1-8999-AC1AE0626500_medicalTriggerResultsOutputX</bpmn2:sourceRef>
-        <bpmn2:targetRef>medicalTriggerResults</bpmn2:targetRef>
+      <bpmn2:dataOutputAssociation id="_NZaPUwo3EeqkmsskmPuzuQ">
+        <bpmn2:sourceRef>_3D88AB36-FBC6-42D1-8999-AC1AE0626500_medicalEventOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>medicalEvent</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:businessRuleTask>
     <bpmn2:businessRuleTask id="_2C92680A-4A0D-4F77-B840-47111E27EE5D" drools:ruleFlowGroup="validateGroup" name="Group Active" implementation="http://www.jboss.org/drools/rule">
@@ -267,81 +253,153 @@
       </bpmn2:extensionElements>
       <bpmn2:incoming>_76565C46-0D95-4041-B58B-A54DD98750FB</bpmn2:incoming>
       <bpmn2:outgoing>_48A3A5E8-60BD-438E-8DE0-84B12AD6E3B5</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_SvWS-gb6EeqJQc7hr1-_Og">
+      <bpmn2:ioSpecification id="_NZaPVAo3EeqkmsskmPuzuQ">
         <bpmn2:dataInput id="_2C92680A-4A0D-4F77-B840-47111E27EE5D_eventInputX" drools:dtype="com.myspace.medicalclaimstest.medicalEvent" itemSubjectRef="__2C92680A-4A0D-4F77-B840-47111E27EE5D_eventInputXItem" name="event"/>
-        <bpmn2:dataInput id="_2C92680A-4A0D-4F77-B840-47111E27EE5D_chInputX" drools:dtype="com.myspace.medicalclaimstest.coverageHolder" itemSubjectRef="__2C92680A-4A0D-4F77-B840-47111E27EE5D_chInputXItem" name="ch"/>
+        <bpmn2:dataInput id="_2C92680A-4A0D-4F77-B840-47111E27EE5D_employerGroupInputX" drools:dtype="com.myspace.medicalclaimstest.employerGroup" itemSubjectRef="__2C92680A-4A0D-4F77-B840-47111E27EE5D_employerGroupInputXItem" name="employerGroup"/>
         <bpmn2:dataOutput id="_2C92680A-4A0D-4F77-B840-47111E27EE5D_eventOutputX" drools:dtype="com.myspace.medicalclaimstest.medicalEvent" itemSubjectRef="__2C92680A-4A0D-4F77-B840-47111E27EE5D_eventOutputXItem" name="event"/>
-        <bpmn2:inputSet id="_SvWS-wb6EeqJQc7hr1-_Og">
+        <bpmn2:inputSet id="_NZaPVQo3EeqkmsskmPuzuQ">
           <bpmn2:dataInputRefs>_2C92680A-4A0D-4F77-B840-47111E27EE5D_eventInputX</bpmn2:dataInputRefs>
-          <bpmn2:dataInputRefs>_2C92680A-4A0D-4F77-B840-47111E27EE5D_chInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_2C92680A-4A0D-4F77-B840-47111E27EE5D_employerGroupInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_SvWS_Ab6EeqJQc7hr1-_Og">
+        <bpmn2:outputSet id="_NZaPVgo3EeqkmsskmPuzuQ">
           <bpmn2:dataOutputRefs>_2C92680A-4A0D-4F77-B840-47111E27EE5D_eventOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_SvWS_Qb6EeqJQc7hr1-_Og">
+      <bpmn2:dataInputAssociation id="_NZaPVwo3EeqkmsskmPuzuQ">
         <bpmn2:sourceRef>medicalEvent</bpmn2:sourceRef>
         <bpmn2:targetRef>_2C92680A-4A0D-4F77-B840-47111E27EE5D_eventInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_SvWS_gb6EeqJQc7hr1-_Og">
-        <bpmn2:sourceRef>coverageHolder</bpmn2:sourceRef>
-        <bpmn2:targetRef>_2C92680A-4A0D-4F77-B840-47111E27EE5D_chInputX</bpmn2:targetRef>
+      <bpmn2:dataInputAssociation id="_NZaPWAo3EeqkmsskmPuzuQ">
+        <bpmn2:sourceRef>employerGroup</bpmn2:sourceRef>
+        <bpmn2:targetRef>_2C92680A-4A0D-4F77-B840-47111E27EE5D_employerGroupInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_SvWS_wb6EeqJQc7hr1-_Og">
+      <bpmn2:dataOutputAssociation id="_NZaPWQo3EeqkmsskmPuzuQ">
         <bpmn2:sourceRef>_2C92680A-4A0D-4F77-B840-47111E27EE5D_eventOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>medicalEvent</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:businessRuleTask>
     <bpmn2:endEvent id="_F2810586-428E-40CB-AE80-F85B7B233A43">
-      <bpmn2:incoming>_872DCCD3-B1EC-42B6-8698-FF9C9AB2BDC8</bpmn2:incoming>
+      <bpmn2:incoming>_DCDB3509-1BEB-4BDF-BF4E-222D2ED81D41</bpmn2:incoming>
     </bpmn2:endEvent>
-    <bpmn2:businessRuleTask id="_70CC3776-E19A-4781-94C9-3A031BBBA95E" drools:ruleFlowGroup="chHaveProduct" name="Customer Has Product" implementation="http://www.jboss.org/drools/rule">
+    <bpmn2:businessRuleTask id="_77F540BC-DCDD-4668-A7B3-48439E01593B" drools:ruleFlowGroup="covAfterEffectiveDate" name="EventAfter Coverage Start" implementation="http://www.jboss.org/drools/rule">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[EventAfter Coverage Start]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_483EC07A-8EFD-4F41-A23A-AB5C05ED7F9D</bpmn2:incoming>
+      <bpmn2:outgoing>_B5295655-96B2-4204-B29E-F8A8B7198C83</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_NZaPWgo3EeqkmsskmPuzuQ">
+        <bpmn2:dataInput id="_77F540BC-DCDD-4668-A7B3-48439E01593B_eventInputX" drools:dtype="com.myspace.medicalclaimstest.medicalEvent" itemSubjectRef="__77F540BC-DCDD-4668-A7B3-48439E01593B_eventInputXItem" name="event"/>
+        <bpmn2:dataInput id="_77F540BC-DCDD-4668-A7B3-48439E01593B_chInputX" drools:dtype="com.myspace.medicalclaimstest.coverageHolder" itemSubjectRef="__77F540BC-DCDD-4668-A7B3-48439E01593B_chInputXItem" name="ch"/>
+        <bpmn2:dataOutput id="_77F540BC-DCDD-4668-A7B3-48439E01593B_eventOutputX" drools:dtype="com.myspace.medicalclaimstest.medicalEvent" itemSubjectRef="__77F540BC-DCDD-4668-A7B3-48439E01593B_eventOutputXItem" name="event"/>
+        <bpmn2:inputSet id="_NZaPWwo3EeqkmsskmPuzuQ">
+          <bpmn2:dataInputRefs>_77F540BC-DCDD-4668-A7B3-48439E01593B_eventInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_77F540BC-DCDD-4668-A7B3-48439E01593B_chInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_NZaPXAo3EeqkmsskmPuzuQ">
+          <bpmn2:dataOutputRefs>_77F540BC-DCDD-4668-A7B3-48439E01593B_eventOutputX</bpmn2:dataOutputRefs>
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_NZaPXQo3EeqkmsskmPuzuQ">
+        <bpmn2:sourceRef>medicalEvent</bpmn2:sourceRef>
+        <bpmn2:targetRef>_77F540BC-DCDD-4668-A7B3-48439E01593B_eventInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_NZaPXgo3EeqkmsskmPuzuQ">
+        <bpmn2:sourceRef>coverageHolder</bpmn2:sourceRef>
+        <bpmn2:targetRef>_77F540BC-DCDD-4668-A7B3-48439E01593B_chInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_NZaPXwo3EeqkmsskmPuzuQ">
+        <bpmn2:sourceRef>_77F540BC-DCDD-4668-A7B3-48439E01593B_eventOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>medicalEvent</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+    </bpmn2:businessRuleTask>
+    <bpmn2:businessRuleTask id="_A4E7DA3E-D929-4352-A902-F96C6CD7FB47" drools:ruleFlowGroup="custHaveProduct" name="Customer Has Product" implementation="http://www.jboss.org/drools/rule">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[Customer Has Product]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_51724F87-719D-4B00-A4A4-E87EBBEC093E</bpmn2:incoming>
-      <bpmn2:outgoing>_A32E9106-D5F4-4055-8A82-4E4BB5A0FAB5</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_SvWTAAb6EeqJQc7hr1-_Og">
-        <bpmn2:dataInput id="_70CC3776-E19A-4781-94C9-3A031BBBA95E_chCoveragesInputX" drools:dtype="com.myspace.medicalclaimstest.chCoverages" itemSubjectRef="__70CC3776-E19A-4781-94C9-3A031BBBA95E_chCoveragesInputXItem" name="chCoverages"/>
-        <bpmn2:dataInput id="_70CC3776-E19A-4781-94C9-3A031BBBA95E_eventInputX" drools:dtype="com.myspace.medicalclaimstest.medicalEvent" itemSubjectRef="__70CC3776-E19A-4781-94C9-3A031BBBA95E_eventInputXItem" name="event"/>
-        <bpmn2:dataOutput id="_70CC3776-E19A-4781-94C9-3A031BBBA95E_custHaveProductOutputX" drools:dtype="com.myspace.medicalclaimstest.medicalTriggerResults" itemSubjectRef="__70CC3776-E19A-4781-94C9-3A031BBBA95E_custHaveProductOutputXItem" name="custHaveProduct"/>
-        <bpmn2:inputSet id="_SvWTAQb6EeqJQc7hr1-_Og">
-          <bpmn2:dataInputRefs>_70CC3776-E19A-4781-94C9-3A031BBBA95E_chCoveragesInputX</bpmn2:dataInputRefs>
-          <bpmn2:dataInputRefs>_70CC3776-E19A-4781-94C9-3A031BBBA95E_eventInputX</bpmn2:dataInputRefs>
+      <bpmn2:outgoing>_483EC07A-8EFD-4F41-A23A-AB5C05ED7F9D</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_NZaPYAo3EeqkmsskmPuzuQ">
+        <bpmn2:dataInput id="_A4E7DA3E-D929-4352-A902-F96C6CD7FB47_eventInputX" drools:dtype="com.myspace.medicalclaimstest.medicalEvent" itemSubjectRef="__A4E7DA3E-D929-4352-A902-F96C6CD7FB47_eventInputXItem" name="event"/>
+        <bpmn2:dataInput id="_A4E7DA3E-D929-4352-A902-F96C6CD7FB47_chInputX" drools:dtype="com.myspace.medicalclaimstest.coverageHolder" itemSubjectRef="__A4E7DA3E-D929-4352-A902-F96C6CD7FB47_chInputXItem" name="ch"/>
+        <bpmn2:dataOutput id="_A4E7DA3E-D929-4352-A902-F96C6CD7FB47_eventOutputX" drools:dtype="com.myspace.medicalclaimstest.medicalEvent" itemSubjectRef="__A4E7DA3E-D929-4352-A902-F96C6CD7FB47_eventOutputXItem" name="event"/>
+        <bpmn2:inputSet id="_NZaPYQo3EeqkmsskmPuzuQ">
+          <bpmn2:dataInputRefs>_A4E7DA3E-D929-4352-A902-F96C6CD7FB47_eventInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_A4E7DA3E-D929-4352-A902-F96C6CD7FB47_chInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_SvWTAgb6EeqJQc7hr1-_Og">
-          <bpmn2:dataOutputRefs>_70CC3776-E19A-4781-94C9-3A031BBBA95E_custHaveProductOutputX</bpmn2:dataOutputRefs>
+        <bpmn2:outputSet id="_NZaPYgo3EeqkmsskmPuzuQ">
+          <bpmn2:dataOutputRefs>_A4E7DA3E-D929-4352-A902-F96C6CD7FB47_eventOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_SvWTAwb6EeqJQc7hr1-_Og">
-        <bpmn2:sourceRef>chCoverages</bpmn2:sourceRef>
-        <bpmn2:targetRef>_70CC3776-E19A-4781-94C9-3A031BBBA95E_chCoveragesInputX</bpmn2:targetRef>
-      </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_SvWTBAb6EeqJQc7hr1-_Og">
+      <bpmn2:dataInputAssociation id="_NZaPYwo3EeqkmsskmPuzuQ">
         <bpmn2:sourceRef>medicalEvent</bpmn2:sourceRef>
-        <bpmn2:targetRef>_70CC3776-E19A-4781-94C9-3A031BBBA95E_eventInputX</bpmn2:targetRef>
+        <bpmn2:targetRef>_A4E7DA3E-D929-4352-A902-F96C6CD7FB47_eventInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_SvWTBQb6EeqJQc7hr1-_Og">
-        <bpmn2:sourceRef>_70CC3776-E19A-4781-94C9-3A031BBBA95E_custHaveProductOutputX</bpmn2:sourceRef>
-        <bpmn2:targetRef>medicalTriggerResults</bpmn2:targetRef>
+      <bpmn2:dataInputAssociation id="_NZaPZAo3EeqkmsskmPuzuQ">
+        <bpmn2:sourceRef>coverageHolder</bpmn2:sourceRef>
+        <bpmn2:targetRef>_A4E7DA3E-D929-4352-A902-F96C6CD7FB47_chInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_NZaPZQo3EeqkmsskmPuzuQ">
+        <bpmn2:sourceRef>_A4E7DA3E-D929-4352-A902-F96C6CD7FB47_eventOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>medicalEvent</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:businessRuleTask>
     <bpmn2:startEvent id="_70116930-60EA-475C-8F8C-943ADC62DE70">
       <bpmn2:outgoing>_83A191EC-750F-4B65-BBDA-54F3A5E693D5</bpmn2:outgoing>
     </bpmn2:startEvent>
+    <bpmn2:businessRuleTask id="_6F58666C-D820-465D-BAF2-FFC02D271075" drools:ruleFlowGroup="claimActive" name="Check Active Claims" implementation="http://www.jboss.org/drools/rule">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Check Active Claims]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_B5295655-96B2-4204-B29E-F8A8B7198C83</bpmn2:incoming>
+      <bpmn2:outgoing>_DCDB3509-1BEB-4BDF-BF4E-222D2ED81D41</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_NZaPZgo3EeqkmsskmPuzuQ">
+        <bpmn2:dataInput id="_6F58666C-D820-465D-BAF2-FFC02D271075_chInputX" drools:dtype="com.myspace.medicalclaimstest.coverageHolder" itemSubjectRef="__6F58666C-D820-465D-BAF2-FFC02D271075_chInputXItem" name="ch"/>
+        <bpmn2:dataInput id="_6F58666C-D820-465D-BAF2-FFC02D271075_eventInputX" drools:dtype="com.myspace.medicalclaimstest.medicalEvent" itemSubjectRef="__6F58666C-D820-465D-BAF2-FFC02D271075_eventInputXItem" name="event"/>
+        <bpmn2:dataOutput id="_6F58666C-D820-465D-BAF2-FFC02D271075_eventOutputX" drools:dtype="com.myspace.medicalclaimstest.medicalEvent" itemSubjectRef="__6F58666C-D820-465D-BAF2-FFC02D271075_eventOutputXItem" name="event"/>
+        <bpmn2:inputSet id="_NZaPZwo3EeqkmsskmPuzuQ">
+          <bpmn2:dataInputRefs>_6F58666C-D820-465D-BAF2-FFC02D271075_chInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_6F58666C-D820-465D-BAF2-FFC02D271075_eventInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_NZaPaAo3EeqkmsskmPuzuQ">
+          <bpmn2:dataOutputRefs>_6F58666C-D820-465D-BAF2-FFC02D271075_eventOutputX</bpmn2:dataOutputRefs>
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_NZaPaQo3EeqkmsskmPuzuQ">
+        <bpmn2:sourceRef>coverageHolder</bpmn2:sourceRef>
+        <bpmn2:targetRef>_6F58666C-D820-465D-BAF2-FFC02D271075_chInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_NZaPago3EeqkmsskmPuzuQ">
+        <bpmn2:sourceRef>medicalEvent</bpmn2:sourceRef>
+        <bpmn2:targetRef>_6F58666C-D820-465D-BAF2-FFC02D271075_eventInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_NZaPawo3EeqkmsskmPuzuQ">
+        <bpmn2:sourceRef>_6F58666C-D820-465D-BAF2-FFC02D271075_eventOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>medicalEvent</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+    </bpmn2:businessRuleTask>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="_SvWTBgb6EeqJQc7hr1-_Og">
-    <bpmndi:BPMNPlane id="_SvWTBwb6EeqJQc7hr1-_Og" bpmnElement="medicalClaimsTest.medEventEval">
+  <bpmndi:BPMNDiagram id="_NZaPbAo3EeqkmsskmPuzuQ">
+    <bpmndi:BPMNPlane id="_NZaPbQo3EeqkmsskmPuzuQ" bpmnElement="medicalClaimsTest.medEventEval">
+      <bpmndi:BPMNShape id="shape__6F58666C-D820-465D-BAF2-FFC02D271075" bpmnElement="_6F58666C-D820-465D-BAF2-FFC02D271075">
+        <dc:Bounds height="102.0" width="154.0" x="1413.0" y="82.0"/>
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__70116930-60EA-475C-8F8C-943ADC62DE70" bpmnElement="_70116930-60EA-475C-8F8C-943ADC62DE70">
         <dc:Bounds height="56.0" width="56.0" x="100.0" y="100.0"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="shape__70CC3776-E19A-4781-94C9-3A031BBBA95E" bpmnElement="_70CC3776-E19A-4781-94C9-3A031BBBA95E">
-        <dc:Bounds height="102.0" width="154.0" x="994.0" y="82.0"/>
+      <bpmndi:BPMNShape id="shape__A4E7DA3E-D929-4352-A902-F96C6CD7FB47" bpmnElement="_A4E7DA3E-D929-4352-A902-F96C6CD7FB47">
+        <dc:Bounds height="102.0" width="154.0" x="1004.0" y="82.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__77F540BC-DCDD-4668-A7B3-48439E01593B" bpmnElement="_77F540BC-DCDD-4668-A7B3-48439E01593B">
+        <dc:Bounds height="102.0" width="154.0" x="1205.0" y="82.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__F2810586-428E-40CB-AE80-F85B7B233A43" bpmnElement="_F2810586-428E-40CB-AE80-F85B7B233A43">
-        <dc:Bounds height="56.0" width="56.0" x="1420.0" y="108.0"/>
+        <dc:Bounds height="56.0" width="56.0" x="1621.0" y="100.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__2C92680A-4A0D-4F77-B840-47111E27EE5D" bpmnElement="_2C92680A-4A0D-4F77-B840-47111E27EE5D">
         <dc:Bounds height="102.0" width="154.0" x="439.0" y="82.0"/>
@@ -349,30 +407,31 @@
       <bpmndi:BPMNShape id="shape__3D88AB36-FBC6-42D1-8999-AC1AE0626500" bpmnElement="_3D88AB36-FBC6-42D1-8999-AC1AE0626500">
         <dc:Bounds height="102.0" width="154.0" x="809.0" y="82.0"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="shape__6E3C5156-F49A-4E26-B46E-31BD5A99A14A" bpmnElement="_6E3C5156-F49A-4E26-B46E-31BD5A99A14A">
-        <dc:Bounds height="102.0" width="154.0" x="1179.0" y="82.0"/>
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__02F0524A-5E0D-42D2-8801-39ADF3A21581" bpmnElement="_02F0524A-5E0D-42D2-8801-39ADF3A21581">
         <dc:Bounds height="102.0" width="154.0" x="624.0" y="82.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__32F8EAF3-6084-4804-B34A-B482EC2A0702" bpmnElement="_32F8EAF3-6084-4804-B34A-B482EC2A0702">
         <dc:Bounds height="102.0" width="154.0" x="254.0" y="82.0"/>
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="edge_shape__77F540BC-DCDD-4668-A7B3-48439E01593B_to_shape__6F58666C-D820-465D-BAF2-FFC02D271075" bpmnElement="_B5295655-96B2-4204-B29E-F8A8B7198C83">
+        <di:waypoint xsi:type="dc:Point" x="1282.0" y="82.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1413.0" y="133.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__6F58666C-D820-465D-BAF2-FFC02D271075_to_shape__F2810586-428E-40CB-AE80-F85B7B233A43" bpmnElement="_DCDB3509-1BEB-4BDF-BF4E-222D2ED81D41">
+        <di:waypoint xsi:type="dc:Point" x="1490.0" y="82.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1649.0" y="156.0"/>
+      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__70116930-60EA-475C-8F8C-943ADC62DE70_to_shape__32F8EAF3-6084-4804-B34A-B482EC2A0702" bpmnElement="_83A191EC-750F-4B65-BBDA-54F3A5E693D5">
         <di:waypoint xsi:type="dc:Point" x="156.0" y="128.0"/>
         <di:waypoint xsi:type="dc:Point" x="254.0" y="133.0"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="edge_shape__3D88AB36-FBC6-42D1-8999-AC1AE0626500_to_shape__70CC3776-E19A-4781-94C9-3A031BBBA95E" bpmnElement="_51724F87-719D-4B00-A4A4-E87EBBEC093E">
+      <bpmndi:BPMNEdge id="edge_shape__3D88AB36-FBC6-42D1-8999-AC1AE0626500_to_shape__A4E7DA3E-D929-4352-A902-F96C6CD7FB47" bpmnElement="_51724F87-719D-4B00-A4A4-E87EBBEC093E">
         <di:waypoint xsi:type="dc:Point" x="886.0" y="184.0"/>
-        <di:waypoint xsi:type="dc:Point" x="994.0" y="133.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1081.0" y="82.0"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="edge_shape__70CC3776-E19A-4781-94C9-3A031BBBA95E_to_shape__6E3C5156-F49A-4E26-B46E-31BD5A99A14A" bpmnElement="_A32E9106-D5F4-4055-8A82-4E4BB5A0FAB5">
-        <di:waypoint xsi:type="dc:Point" x="1148.0" y="133.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1179.0" y="133.0"/>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="edge_shape__6E3C5156-F49A-4E26-B46E-31BD5A99A14A_to_shape__F2810586-428E-40CB-AE80-F85B7B233A43" bpmnElement="_872DCCD3-B1EC-42B6-8698-FF9C9AB2BDC8">
-        <di:waypoint xsi:type="dc:Point" x="1333.0" y="133.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1420.0" y="136.0"/>
+      <bpmndi:BPMNEdge id="edge_shape__A4E7DA3E-D929-4352-A902-F96C6CD7FB47_to_shape__77F540BC-DCDD-4668-A7B3-48439E01593B" bpmnElement="_483EC07A-8EFD-4F41-A23A-AB5C05ED7F9D">
+        <di:waypoint xsi:type="dc:Point" x="1081.0" y="184.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1282.0" y="82.0"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__32F8EAF3-6084-4804-B34A-B482EC2A0702_to_shape__2C92680A-4A0D-4F77-B840-47111E27EE5D" bpmnElement="_76565C46-0D95-4041-B58B-A54DD98750FB">
         <di:waypoint xsi:type="dc:Point" x="408.0" y="133.0"/>
@@ -388,19 +447,12 @@
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_SvW58Ab6EeqJQc7hr1-_Og" type="BPSimData">
+  <bpmn2:relationship id="_NZaPbgo3EeqkmsskmPuzuQ" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
           <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_70116930-60EA-475C-8F8C-943ADC62DE70" id="_SvW58Qb6EeqJQc7hr1-_Og">
-            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
-              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
-                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
-              </bpsim:ProcessingTime>
-            </bpsim:TimeParameters>
-          </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_70CC3776-E19A-4781-94C9-3A031BBBA95E" id="_SvW58gb6EeqJQc7hr1-_Og">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_6F58666C-D820-465D-BAF2-FFC02D271075" id="_NZaPbwo3EeqkmsskmPuzuQ">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -420,7 +472,14 @@
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_2C92680A-4A0D-4F77-B840-47111E27EE5D" id="_SvW58wb6EeqJQc7hr1-_Og">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_70116930-60EA-475C-8F8C-943ADC62DE70" id="_NZaPcAo3EeqkmsskmPuzuQ">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_A4E7DA3E-D929-4352-A902-F96C6CD7FB47" id="_NZaPcQo3EeqkmsskmPuzuQ">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -440,7 +499,7 @@
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_3D88AB36-FBC6-42D1-8999-AC1AE0626500" id="_SvW59Ab6EeqJQc7hr1-_Og">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_77F540BC-DCDD-4668-A7B3-48439E01593B" id="_NZaPcgo3EeqkmsskmPuzuQ">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -460,7 +519,7 @@
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_6E3C5156-F49A-4E26-B46E-31BD5A99A14A" id="_SvW59Qb6EeqJQc7hr1-_Og">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_2C92680A-4A0D-4F77-B840-47111E27EE5D" id="_NZaPcwo3EeqkmsskmPuzuQ">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -480,7 +539,7 @@
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_02F0524A-5E0D-42D2-8801-39ADF3A21581" id="_SvW59gb6EeqJQc7hr1-_Og">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_3D88AB36-FBC6-42D1-8999-AC1AE0626500" id="_NZaPdAo3EeqkmsskmPuzuQ">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -500,7 +559,27 @@
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_32F8EAF3-6084-4804-B34A-B482EC2A0702" id="_SvW59wb6EeqJQc7hr1-_Og">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_02F0524A-5E0D-42D2-8801-39ADF3A21581" id="_NZaPdQo3EeqkmsskmPuzuQ">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_32F8EAF3-6084-4804-B34A-B482EC2A0702" id="_NZaPdgo3EeqkmsskmPuzuQ">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -523,7 +602,7 @@
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_SvWS4Ab6EeqJQc7hr1-_Og</bpmn2:source>
-    <bpmn2:target>_SvWS4Ab6EeqJQc7hr1-_Og</bpmn2:target>
+    <bpmn2:source>_NZaPQAo3EeqkmsskmPuzuQ</bpmn2:source>
+    <bpmn2:target>_NZaPQAo3EeqkmsskmPuzuQ</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>

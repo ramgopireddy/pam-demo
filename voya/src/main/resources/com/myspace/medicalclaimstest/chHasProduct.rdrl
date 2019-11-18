@@ -1,0 +1,15 @@
+package com.myspace.medicalclaimstest;
+
+import java.lang.Number;
+
+rule "chHasProduct"
+	dialect "mvel"
+	ruleflow-group "custHaveProduct"
+	when
+		ch : coverageHolder( )
+		chcoverage : chCoverages( ) from ch.chCoverages
+		event : medicalEvent( )
+		mtr : medicalTriggerResults( prodName matches chcoverage.coverageProduct ) from event.probResults
+	then
+		mtr.setCustHaveProduct( true );
+end

@@ -17,6 +17,9 @@ public class employerGroup implements java.io.Serializable {
 	@org.kie.api.definition.type.Description("The current status of our relationship with the group (Active, Inactive, etc.)")
 	private java.lang.String groupStatus;
 
+	@org.kie.api.definition.type.Label(value = "Group Coverages")
+	private java.util.List<com.myspace.medicalclaimstest.groupCoverages> groupCoverage;
+
 	public employerGroup() {
 	}
 
@@ -44,17 +47,30 @@ public class employerGroup implements java.io.Serializable {
 		this.groupStatus = groupStatus;
 	}
 
-	public employerGroup(java.lang.String groupNumber,
-			java.lang.String groupName, java.lang.String groupStatus) {
+	@Override
+	public String toString() {
+		return "employerGroup [groupNumber=" + groupNumber + ", groupName="
+				+ groupName + ", groupStatus=" + groupStatus +  ", groupCoverage=" + groupCoverage + "]";
+	}
+
+	public java.util.List<com.myspace.medicalclaimstest.groupCoverages> getGroupCoverage() {
+		return this.groupCoverage;
+	}
+
+	public void setGroupCoverage(
+			java.util.List<com.myspace.medicalclaimstest.groupCoverages> groupCoverage) {
+		this.groupCoverage = groupCoverage;
+	}
+
+	public employerGroup(
+			java.lang.String groupNumber,
+			java.lang.String groupName,
+			java.lang.String groupStatus,
+			java.util.List<com.myspace.medicalclaimstest.groupCoverages> groupCoverage) {
 		this.groupNumber = groupNumber;
 		this.groupName = groupName;
 		this.groupStatus = groupStatus;
-	}
-	
-	@Override
-	public String toString() {
-		return "employerGroup [groupNumber=" + groupNumber + ", groupName=" + groupName + ", groupStatus=" + groupStatus
-				+ "]";
+		this.groupCoverage = groupCoverage;
 	}
 
 }

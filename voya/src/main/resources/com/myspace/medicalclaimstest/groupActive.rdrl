@@ -6,7 +6,7 @@ rule "groupActive"
 	dialect "mvel"
 	when
 		event : medicalEvent( )
-		ch : coverageHolder( chGroup.groupStatus matches "Active-Inforce" )
+		eg : employerGroup( groupStatus matches "Active-Inforce" )
 	then
 		event.setGroupActive( true );
 end
