@@ -11,7 +11,7 @@ public class Board implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Board Part #")
 	private java.lang.String boardPartNum;
 	@org.kie.api.definition.type.Label("Serial Number")
-	private java.lang.Short serialNum;
+	private Short serialNum;
 	@org.kie.api.definition.type.Label("Description")
 	private java.lang.String description;
 	@org.kie.api.definition.type.Label("Manufacturer")
@@ -21,7 +21,7 @@ public class Board implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Repair Value")
 	private java.lang.Double price;
 
-	@org.kie.api.definition.type.Label(value = "Components Used")
+	@org.kie.api.definition.type.Label("Components Used")
 	private java.util.List<com.myspace.rits.Components> components;
 
 	public Board() {
@@ -33,14 +33,6 @@ public class Board implements java.io.Serializable {
 
 	public void setBoardPartNum(java.lang.String boardPartNum) {
 		this.boardPartNum = boardPartNum;
-	}
-
-	public java.lang.Short getSerialNum() {
-		return this.serialNum;
-	}
-
-	public void setSerialNum(java.lang.Short serialNum) {
-		this.serialNum = serialNum;
 	}
 
 	public java.lang.String getDescription() {
@@ -82,6 +74,14 @@ public class Board implements java.io.Serializable {
 	public void setComponents(
 			java.util.List<com.myspace.rits.Components> components) {
 		this.components = components;
+	}
+
+	public java.lang.Short getSerialNum() {
+		return this.serialNum;
+	}
+
+	public void setSerialNum(java.lang.Short serialNum) {
+		this.serialNum = serialNum;
 	}
 
 	public Board(java.lang.String boardPartNum, java.lang.Short serialNum,
