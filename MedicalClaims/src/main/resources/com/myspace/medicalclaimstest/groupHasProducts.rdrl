@@ -1,0 +1,15 @@
+package com.myspace.medicalclaimstest;
+
+import java.lang.Number;
+
+rule "groupHasProducts"
+	dialect "mvel"
+	ruleflow-group "groupOfferProduct"
+	when
+		me : medicalEvent( )
+		mtr : medicalTriggerResults( ) from me.probResults
+		eg : employerGroup( )
+		gc : groupCoverages( groupProduct == mtr.prodName ) from eg.groupCoverage
+	then
+		mtr.setGroupOfferProduct( true );
+end

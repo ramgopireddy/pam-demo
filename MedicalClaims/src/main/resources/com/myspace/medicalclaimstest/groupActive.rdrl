@@ -1,0 +1,12 @@
+package com.myspace.medicalclaimstest;
+
+import java.lang.Number;
+
+rule "groupActive"
+	dialect "mvel"
+	when
+		event : medicalEvent( )
+		eg : employerGroup( groupStatus matches "Active-Inforce" )
+	then
+		event.setGroupActive( true );
+end
